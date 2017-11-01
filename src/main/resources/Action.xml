@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<action>
+	<terminal id = "1" classname = "com.byanda.gateserver.action.terminal.TerminalLoginAction"/>
+	<terminal id = "2" classname = "com.byanda.gateserver.action.terminal.TerminalModifyUserNameAction"/>
+	<terminal id = "3" classname = "com.byanda.gateserver.action.terminal.TerminalModifyPasswordAction"/>
+	<terminal id = "4" classname = "com.byanda.gateserver.action.terminal.TerminalHeartAction"/>
+	<terminal id = "8" classname = "com.byanda.gateserver.action.terminal.TerminalClientListAction"/>
+	<terminal id = "9" classname = "com.byanda.gateserver.action.terminal.TerminalUserListAction"/>
+	<terminal id = "10" classname = "com.byanda.gateserver.action.terminal.TerminalStreamAddressAction"/>
+	
+	
+	
+	<client id = "1" classname = "com.byanda.gateserver.action.client.ClientLoginAction"/>
+	<client id = "4" classname = "com.byanda.gateserver.action.client.ClientHeartAction"/>
+	
+	
+	
+</action>

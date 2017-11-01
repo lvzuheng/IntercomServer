@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource>
+
+	<version>v1</version>
+	<identifier>g001</identifier>
+	<servers>
+		<server name = 'terminal' port = '6666'/>
+	</servers>
+<!-- 	<servers>
+		<server name = 'client' port = '7777'/>
+	</servers> -->
+<!-- 	<clients>
+		<client name = 'client' host ='127.0.0.1' port = '7777'/>
+	</clients> -->
+</resource>

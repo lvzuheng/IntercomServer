@@ -1,0 +1,111 @@
+2017-09-01 17:47:11 [ INFO] - org.springframework.context.support.ClassPathXmlApplicationContext : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4ef16070: startup date [Fri Sep 01 17:47:11 CST 2017]; root of context hierarchy
+  2017-09-01 17:47:12 [ INFO] - org.springframework.beans.factory.xml.XmlBeanDefinitionReader : Loading XML bean definitions from URL [file:/F:/java-neon/workspace/IntercomServer/target/classes/ApplicationContext.xml]
+  2017-09-01 17:47:12 [ INFO] - org.springframework.context.support.PropertySourcesPlaceholderConfigurer : Loading properties file from class path resource [config.properties]
+  2017-09-01 17:47:13 [ INFO] - com.mchange.v2.log.MLog : MLog clients using log4j logging.
+  2017-09-01 17:47:13 [ INFO] - com.mchange.v2.c3p0.C3P0Registry : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+  2017-09-01 17:47:13 [ INFO] - org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+  2017-09-01 17:47:13 [ INFO] - org.hibernate.Version : HHH000412: Hibernate Core {4.1.0.Final}
+  2017-09-01 17:47:13 [ INFO] - org.hibernate.cfg.Environment : HHH000206: hibernate.properties not found
+  2017-09-01 17:47:13 [ INFO] - org.hibernate.cfg.Environment : HHH000021: Bytecode provider name : javassist
+  2017-09-01 17:47:13 [ INFO] - org.hibernate.cfg.Configuration : HHH000044: Configuring from URL: file:/F:/java-neon/workspace/IntercomServer/target/classes/hibernate.cfg.xml
+  2017-09-01 17:47:13 [ INFO] - org.hibernate.cfg.Configuration : HHH000041: Configured SessionFactory: null
+  2017-09-01 17:47:13 [ INFO] - com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2sozv79qgvopdc3882yr|774140b3, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2sozv79qgvopdc3882yr|774140b3, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://120.55.162.188:3306/IntercomData?useUnicode=true&characterEncoding=UTF8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 1000, maxStatements -> 8, maxStatementsPerConnection -> 5, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+  2017-09-01 17:47:14 [ INFO] - org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  2017-09-01 17:47:14 [ INFO] - org.hibernate.engine.jdbc.internal.LobCreatorBuilder : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+  2017-09-01 17:47:14 [ INFO] - org.hibernate.engine.transaction.internal.TransactionFactoryInitiator : HHH000399: Using default transaction strategy (direct JDBC transactions)
+  2017-09-01 17:47:14 [ INFO] - org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory : HHH000397: Using ASTQueryTranslatorFactory
+  2017-09-01 17:47:14 [ INFO] - org.hibernate.tool.hbm2ddl.SchemaUpdate : HHH000228: Running hbm2ddl schema update
+  2017-09-01 17:47:14 [ INFO] - org.hibernate.tool.hbm2ddl.SchemaUpdate : HHH000102: Fetching database metadata
+  2017-09-01 17:47:14 [ INFO] - org.hibernate.tool.hbm2ddl.SchemaUpdate : HHH000396: Updating schema
+  2017-09-01 17:47:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000261: Table found: IntercomData.groupInfo
+  2017-09-01 17:47:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000037: Columns: [id, name, owner]
+  2017-09-01 17:47:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000108: Foreign keys: []
+  2017-09-01 17:47:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000126: Indexes: [primary]
+  2017-09-01 17:47:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000261: Table found: IntercomData.groupMember
+  2017-09-01 17:47:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000037: Columns: [id, username, grade, groupid]
+  2017-09-01 17:47:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000108: Foreign keys: [id, username]
+  2017-09-01 17:47:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000126: Indexes: [username_idx, id_idx, primary]
+  2017-09-01 17:47:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000261: Table found: IntercomData.user
+  2017-09-01 17:47:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000037: Columns: [id, username, nickname, password]
+  2017-09-01 17:47:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000108: Foreign keys: []
+  2017-09-01 17:47:14 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000126: Indexes: [uid_unique, primary]
+  2017-09-01 17:47:14 [ INFO] - org.hibernate.tool.hbm2ddl.SchemaUpdate : HHH000232: Schema update complete
+  2017-09-01 17:47:15 [ INFO] - org.springframework.orm.hibernate4.HibernateTransactionManager : Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2sozv79qgvopdc3882yr|774140b3, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2sozv79qgvopdc3882yr|774140b3, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://120.55.162.188:3306/IntercomData?useUnicode=true&characterEncoding=UTF8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 1000, maxStatements -> 8, maxStatementsPerConnection -> 5, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+  2017-09-01 17:47:15 [ INFO] - sz.lzh.conversation.config.Configure : 读取了本地配置文件：F:\java-neon\workspace\IntercomServer\conf\config.properties
+  2017-09-01 17:47:23 [ INFO] - net.easyits.tcp.connect.NettyAcceptor : 端口【6666】开始监听
+  2017-09-01 17:47:23 [ INFO] - net.easyits.tcp.connect.NettyAcceptor : 端口【6000】开始监听
+  2017-09-01 17:47:23 [ INFO] - net.easyits.tcp.connect.NettyAcceptor : 端口【6001】开始监听
+  2017-09-01 17:47:23 [ INFO] - net.easyits.tcp.connect.NettyAcceptor : 端口【110】开始监听
+  2017-09-01 17:47:32 [ INFO] - org.springframework.context.support.ClassPathXmlApplicationContext : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@39a44220: startup date [Fri Sep 01 17:47:32 CST 2017]; root of context hierarchy
+  2017-09-01 17:47:32 [ INFO] - org.springframework.beans.factory.xml.XmlBeanDefinitionReader : Loading XML bean definitions from URL [file:/F:/java-neon/workspace/IntercomServer/target/classes/ApplicationContext.xml]
+  2017-09-01 17:47:32 [ INFO] - org.springframework.context.support.PropertySourcesPlaceholderConfigurer : Loading properties file from class path resource [config.properties]
+  2017-09-01 17:47:33 [ INFO] - com.mchange.v2.log.MLog : MLog clients using log4j logging.
+  2017-09-01 17:47:33 [ INFO] - com.mchange.v2.c3p0.C3P0Registry : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+  2017-09-01 17:47:33 [ INFO] - org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+  2017-09-01 17:47:33 [ INFO] - org.hibernate.Version : HHH000412: Hibernate Core {4.1.0.Final}
+  2017-09-01 17:47:33 [ INFO] - org.hibernate.cfg.Environment : HHH000206: hibernate.properties not found
+  2017-09-01 17:47:33 [ INFO] - org.hibernate.cfg.Environment : HHH000021: Bytecode provider name : javassist
+  2017-09-01 17:47:33 [ INFO] - org.hibernate.cfg.Configuration : HHH000044: Configuring from URL: file:/F:/java-neon/workspace/IntercomServer/target/classes/hibernate.cfg.xml
+  2017-09-01 17:47:33 [ INFO] - org.hibernate.cfg.Configuration : HHH000041: Configured SessionFactory: null
+  2017-09-01 17:47:33 [ INFO] - com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2sozv79qgvp4y51la3egk|ac1c16d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2sozv79qgvp4y51la3egk|ac1c16d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://120.55.162.188:3306/IntercomData?useUnicode=true&characterEncoding=UTF8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 1000, maxStatements -> 8, maxStatementsPerConnection -> 5, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+  2017-09-01 17:47:34 [ INFO] - org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  2017-09-01 17:47:34 [ INFO] - org.hibernate.engine.jdbc.internal.LobCreatorBuilder : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+  2017-09-01 17:47:34 [ INFO] - org.hibernate.engine.transaction.internal.TransactionFactoryInitiator : HHH000399: Using default transaction strategy (direct JDBC transactions)
+  2017-09-01 17:47:34 [ INFO] - org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory : HHH000397: Using ASTQueryTranslatorFactory
+  2017-09-01 17:47:34 [ INFO] - org.hibernate.tool.hbm2ddl.SchemaUpdate : HHH000228: Running hbm2ddl schema update
+  2017-09-01 17:47:34 [ INFO] - org.hibernate.tool.hbm2ddl.SchemaUpdate : HHH000102: Fetching database metadata
+  2017-09-01 17:47:34 [ INFO] - org.hibernate.tool.hbm2ddl.SchemaUpdate : HHH000396: Updating schema
+  2017-09-01 17:47:34 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000261: Table found: IntercomData.groupInfo
+  2017-09-01 17:47:34 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000037: Columns: [id, name, owner]
+  2017-09-01 17:47:34 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000108: Foreign keys: []
+  2017-09-01 17:47:34 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000126: Indexes: [primary]
+  2017-09-01 17:47:34 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000261: Table found: IntercomData.groupMember
+  2017-09-01 17:47:34 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000037: Columns: [id, username, grade, groupid]
+  2017-09-01 17:47:34 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000108: Foreign keys: [id, username]
+  2017-09-01 17:47:34 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000126: Indexes: [username_idx, id_idx, primary]
+  2017-09-01 17:47:35 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000261: Table found: IntercomData.user
+  2017-09-01 17:47:35 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000037: Columns: [id, username, nickname, password]
+  2017-09-01 17:47:35 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000108: Foreign keys: []
+  2017-09-01 17:47:35 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000126: Indexes: [uid_unique, primary]
+  2017-09-01 17:47:35 [ INFO] - org.hibernate.tool.hbm2ddl.SchemaUpdate : HHH000232: Schema update complete
+  2017-09-01 17:47:35 [ INFO] - org.springframework.orm.hibernate4.HibernateTransactionManager : Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2sozv79qgvp4y51la3egk|ac1c16d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2sozv79qgvp4y51la3egk|ac1c16d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://120.55.162.188:3306/IntercomData?useUnicode=true&characterEncoding=UTF8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 1000, maxStatements -> 8, maxStatementsPerConnection -> 5, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+  2017-09-01 17:47:35 [ INFO] - sz.lzh.conversation.config.Configure : 读取了本地配置文件：F:\java-neon\workspace\IntercomServer\conf\config.properties
+  2017-09-01 17:50:57 [ INFO] - org.springframework.context.support.ClassPathXmlApplicationContext : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4ef16070: startup date [Fri Sep 01 17:50:57 CST 2017]; root of context hierarchy
+  2017-09-01 17:50:57 [ INFO] - org.springframework.beans.factory.xml.XmlBeanDefinitionReader : Loading XML bean definitions from URL [file:/F:/java-neon/workspace/IntercomServer/target/classes/ApplicationContext.xml]
+  2017-09-01 17:50:57 [ INFO] - org.springframework.context.support.PropertySourcesPlaceholderConfigurer : Loading properties file from class path resource [config.properties]
+  2017-09-01 17:50:58 [ INFO] - com.mchange.v2.log.MLog : MLog clients using log4j logging.
+  2017-09-01 17:50:58 [ INFO] - com.mchange.v2.c3p0.C3P0Registry : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+  2017-09-01 17:50:58 [ INFO] - org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+  2017-09-01 17:50:58 [ INFO] - org.hibernate.Version : HHH000412: Hibernate Core {4.1.0.Final}
+  2017-09-01 17:50:58 [ INFO] - org.hibernate.cfg.Environment : HHH000206: hibernate.properties not found
+  2017-09-01 17:50:58 [ INFO] - org.hibernate.cfg.Environment : HHH000021: Bytecode provider name : javassist
+  2017-09-01 17:50:58 [ INFO] - org.hibernate.cfg.Configuration : HHH000044: Configuring from URL: file:/F:/java-neon/workspace/IntercomServer/target/classes/hibernate.cfg.xml
+  2017-09-01 17:50:58 [ INFO] - org.hibernate.cfg.Configuration : HHH000041: Configured SessionFactory: null
+  2017-09-01 17:50:58 [ INFO] - com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2sozv79qgvtj70dar06r|774140b3, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2sozv79qgvtj70dar06r|774140b3, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://120.55.162.188:3306/IntercomData?useUnicode=true&characterEncoding=UTF8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 1000, maxStatements -> 8, maxStatementsPerConnection -> 5, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+  2017-09-01 17:50:59 [ INFO] - org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  2017-09-01 17:50:59 [ INFO] - org.hibernate.engine.jdbc.internal.LobCreatorBuilder : HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+  2017-09-01 17:50:59 [ INFO] - org.hibernate.engine.transaction.internal.TransactionFactoryInitiator : HHH000399: Using default transaction strategy (direct JDBC transactions)
+  2017-09-01 17:50:59 [ INFO] - org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory : HHH000397: Using ASTQueryTranslatorFactory
+  2017-09-01 17:50:59 [ INFO] - org.hibernate.tool.hbm2ddl.SchemaUpdate : HHH000228: Running hbm2ddl schema update
+  2017-09-01 17:50:59 [ INFO] - org.hibernate.tool.hbm2ddl.SchemaUpdate : HHH000102: Fetching database metadata
+  2017-09-01 17:50:59 [ INFO] - org.hibernate.tool.hbm2ddl.SchemaUpdate : HHH000396: Updating schema
+  2017-09-01 17:50:59 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000261: Table found: IntercomData.groupInfo
+  2017-09-01 17:50:59 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000037: Columns: [id, name, owner]
+  2017-09-01 17:50:59 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000108: Foreign keys: []
+  2017-09-01 17:50:59 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000126: Indexes: [primary]
+  2017-09-01 17:50:59 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000261: Table found: IntercomData.groupMember
+  2017-09-01 17:50:59 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000037: Columns: [id, username, grade, groupid]
+  2017-09-01 17:50:59 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000108: Foreign keys: [id, username]
+  2017-09-01 17:50:59 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000126: Indexes: [username_idx, id_idx, primary]
+  2017-09-01 17:51:00 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000261: Table found: IntercomData.user
+  2017-09-01 17:51:00 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000037: Columns: [id, username, nickname, password]
+  2017-09-01 17:51:00 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000108: Foreign keys: []
+  2017-09-01 17:51:00 [ INFO] - org.hibernate.tool.hbm2ddl.TableMetadata : HHH000126: Indexes: [uid_unique, primary]
+  2017-09-01 17:51:00 [ INFO] - org.hibernate.tool.hbm2ddl.SchemaUpdate : HHH000232: Schema update complete
+  2017-09-01 17:51:00 [ INFO] - org.springframework.orm.hibernate4.HibernateTransactionManager : Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2sozv79qgvtj70dar06r|774140b3, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2sozv79qgvtj70dar06r|774140b3, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://120.55.162.188:3306/IntercomData?useUnicode=true&characterEncoding=UTF8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 1000, maxStatements -> 8, maxStatementsPerConnection -> 5, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+  2017-09-01 17:51:00 [ INFO] - sz.lzh.conversation.config.Configure : 读取了本地配置文件：F:\java-neon\workspace\IntercomServer\conf\config.properties
+  2017-09-01 17:51:07 [ INFO] - net.easyits.tcp.connect.NettyAcceptor : 端口【6666】开始监听
+  2017-09-01 17:51:07 [ INFO] - net.easyits.tcp.connect.NettyAcceptor : 端口【6000】开始监听
+  2017-09-01 17:51:07 [ INFO] - net.easyits.tcp.connect.NettyAcceptor : 端口【6001】开始监听
+  2017-09-01 17:51:07 [ INFO] - net.easyits.tcp.connect.NettyAcceptor : 端口【110】开始监听
+  
