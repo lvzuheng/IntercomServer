@@ -23,7 +23,7 @@ import sz.lzh.conversation.dao.cache.CacheManager;
 @Service
 public class CacheDataImpl  extends CacheManager {
 
-
+	
 	//插入键值对String-string
 	public void save(String key,String field) {
 		getRedisTemplate().opsForValue().append(key, field);

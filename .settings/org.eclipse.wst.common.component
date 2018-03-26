@@ -6,9 +6,6 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/test"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
-        <dependent-module archiveName="NettyServer.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/NettyServer/NettyServer">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
         <property name="java-output-path" value="/IntercomServer/target/classes"/>
         <property name="context-root" value="IntercomServer"/>
     </wb-module>

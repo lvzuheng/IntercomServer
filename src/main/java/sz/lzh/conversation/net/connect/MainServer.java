@@ -55,7 +55,7 @@ public class MainServer implements ServletContextListener{
 			try {
 				tcpAcceptor.create()
 				.setPort(i)
-				.setHandler(new ServiceHandler().setTIMEOUT(10))
+				.setHandler(new ServiceHandler().setTIMEOUT(60))
 				.open();
 			} catch (Exception e) {
 				// TODO: handle exception
@@ -65,6 +65,7 @@ public class MainServer implements ServletContextListener{
 
 	public void contextInitialized(ServletContextEvent sce) {
 		// TODO Auto-generated method stub
+		System.out.println("启动函数启动了");
 		bootUp();
 	}
 

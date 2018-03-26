@@ -35,7 +35,7 @@ public class P2PIntercomRequestAction extends ActionManager{
 		else {
 			IntercomInforms.P2PCloseReqestInform(interlocutor, p2pIntercomRequest.getUsername());
 			InterlocutorManager.getInstance().getInterlocutor(p2pIntercomRequest.getUsername()).stopP2PIntercom();;
-			interlocutor.stopP2PIntercom();;
+			interlocutor.stopP2PIntercom();
 		}
 	
 	}

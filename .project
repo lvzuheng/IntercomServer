@@ -3,7 +3,6 @@
 	<name>IntercomServer</name>
 	<comment></comment>
 	<projects>
-		<project>NettyServer</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

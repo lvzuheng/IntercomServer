@@ -14,7 +14,8 @@ import java.util.Properties;
 import org.apache.log4j.Logger;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
+import org.springframework.web.context.ContextLoader;
+import org.springframework.web.context.support.WebApplicationContextUtils;
 
 import sz.lzh.conversation.util.manager.ApplicationUtil;
 
@@ -35,13 +36,15 @@ public class Configure {
 				fileInputStream = new FileInputStream(path);
 				if(fileInputStream!=null){
 					entry(fileInputStream);
-					ApplicationContext context = new ClassPathXmlApplicationContext("file:"+System.getProperty("user.dir")+"\\conf\\ApplicationContext.xml");
+//					ApplicationContext context = new ClassPathXmlApplicationContext("file:"+System.getProperty("user.dir")+"\\conf\\ApplicationContext.xml");
+					ApplicationContext context =  ContextLoader.getCurrentWebApplicationContext() == null ?  new ClassPathXmlApplicationContext("file:"+System.getProperty("user.dir")+"\\conf\\ApplicationContext.xml"):ContextLoader.getCurrentWebApplicationContext();
 					ApplicationUtil.setApplicationContext(context);
 					logger.info("读取了外部配置文件："+path);
 				}
 			}else{
 				entry();
-				ApplicationContext context = new ClassPathXmlApplicationContext("classpath*:ApplicationContext.xml");
+//				ApplicationContext context = new ClassPathXmlApplicationContext("classpath*:ApplicationContext.xml");
+				ApplicationContext context =  ContextLoader.getCurrentWebApplicationContext() == null ?  new ClassPathXmlApplicationContext("classpath*:ApplicationContext.xml"):ContextLoader.getCurrentWebApplicationContext();
 				ApplicationUtil.setApplicationContext(context);
 				logger.info("读取了本地配置文件："+path);
 			}

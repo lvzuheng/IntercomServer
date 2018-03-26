@@ -23,6 +23,7 @@ public class ServiceDecoder extends ByteArrayDecoder{
 			super.decode(ctx, msg, out);
 			byte[] buf=new byte[msg.readableBytes()];
 			msg.readBytes(buf);
+			System.out.println("msg:"+new String(buf));
 			try {
 				getAction(new String(buf), ctx);
 			} catch (Exception e) {

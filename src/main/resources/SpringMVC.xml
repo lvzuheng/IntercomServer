@@ -11,7 +11,7 @@
     http://www.springframework.org/schema/context/spring-context-4.0.xsd">
     
 <!--     自动扫描与装配bean -->
-    <context:component-scan base-package="sz/lzh"/>
+    <context:component-scan base-package="sz.lzh.conversation.controller"/>
    <mvc:annotation-driven/> 
     <mvc:resources location="/resources/" mapping="/resources/**"/> 
     

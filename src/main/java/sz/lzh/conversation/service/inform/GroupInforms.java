@@ -31,7 +31,6 @@ public class GroupInforms {
 	public static void leaveGroupInform(List<Interlocutor> iList,String eMember){
 		for(int i=0;i<iList.size();i++)
 			enterGroupInform(iList.get(i),eMember);
-		
 	}
 	
 	public static void enterGroupSuccessInform(Interlocutor interlocutor){

@@ -33,7 +33,7 @@ public class ServiceHandler extends NettyHandler{
 	public void channelActive(ChannelHandlerContext ctx) throws Exception {
 		// TODO Auto-generated method stub
 		super.channelActive(ctx);
-		System.out.println("与["+ctx.channel().remoteAddress()+"]建立连接");
+//		System.out.println("与["+ctx.channel().remoteAddress()+"]建立连接");
 		logger.info("与["+ctx.channel().remoteAddress()+"]建立连接");
 	}
 	
@@ -41,6 +41,7 @@ public class ServiceHandler extends NettyHandler{
 	public void setAllIdleState(ChannelHandlerContext ctx) {
 		// TODO Auto-generated method stub
 		super.setAllIdleState(ctx);
+		System.out.println(ctx.channel().remoteAddress()+"超时");
 		ctx.close();
 	}
 	
@@ -55,6 +56,19 @@ public class ServiceHandler extends NettyHandler{
 	public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
 		// TODO Auto-generated method stub
 		super.channelRead(ctx, msg);
+//		System.out.println(ctx.channel().remoteAddress()+"来消息了");
+	}
+	@Override
+	public void setReadIdleState(ChannelHandlerContext ctx) {
+		// TODO Auto-generated method stub
+		super.setReadIdleState(ctx);
+//		System.out.println("ReadIdle");
+	}
+	@Override
+	public void setWriteIdleState(ChannelHandlerContext ctx) {
+		// TODO Auto-generated method stub
+		super.setWriteIdleState(ctx);
+//		System.out.println("WriteIdle");
 	}
 //	
 }
